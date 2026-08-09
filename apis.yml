@@ -1,10 +1,17 @@
 aid: capstan-therapeutics
 name: Capstan Therapeutics
-description: 'Capstan Therapeutics is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'Capstan Therapeutics was a clinical-stage biotechnology company based in San Diego,
+  California, developing in vivo cell engineering medicines built on a proprietary targeted lipid
+  nanoparticle (tLNP) platform that delivers mRNA and other RNA payloads to specific cell types inside
+  the body. Its lead candidate CPTX2309 is an anti-CD19 in vivo CAR-T therapy in Phase 1 for B
+  cell-mediated autoimmune disease, intended to achieve deep B cell depletion without lymphodepleting
+  chemotherapy. AbbVie completed its acquisition of Capstan on 19 August 2025 for up to $2.1 billion.
+  The company''s own domain now redirects to AbbVie and its DNS is served by AbbVie nameservers; it
+  operates no developer program, public API, SDK, or machine-readable specification.'
 url: https://raw.githubusercontent.com/api-evangelist/capstan-therapeutics/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
+x-source-url: https://forgeglobal.com/capstan-therapeutics_stock/
 x-tier: stub
 x-tier-reason: harvest
 specificationVersion: '0.20'
@@ -12,6 +19,12 @@ created: '2026-08-09'
 modified: '2026-08-09'
 tags:
 - Company
+- Biotechnology
+- Pharmaceuticals
+- Cell Therapy
+- Immunology
+- Life Sciences
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +33,29 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://forgeglobal.com/capstan-therapeutics_stock/
+  url: https://capstantx.com/
+x-enrichment:
+  date: '2026-08-09'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: defunct
+  detail: >-
+    Capstan's own site is gone: capstantx.com 301s to www.abbvie.com/capstan-therapeutics.html and its
+    nameservers are now ns1-4.abbviedns.com, following AbbVie's completed acquisition on 19 August 2025
+    — the company was a clinical-stage biotech that never operated a developer program, GitHub org, or
+    public API.
+  evidence:
+  - url: https://capstantx.com/
+    status: 301
+  - url: https://www.capstantx.com/
+    status: 301
+  - url: https://capstantx.com/.well-known/agent-card.json
+    status: 403
+  - url: https://capstantx.com/openapi.json
+    status: 403
+  - url: https://api.github.com/orgs/capstantx
+    status: 404
+  checked: '2026-08-09'
